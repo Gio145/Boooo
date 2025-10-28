@@ -1,0 +1,151 @@
+/* --- Estilos Generales --- */
+body {
+    /* Fondo degradado suave y romántico */
+    background: linear-gradient(135deg, #fce3e6 0%, #ffc0cb 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Georgia', serif; /* Fuente más clásica */
+    color: #444;
+    padding: 20px;
+}
+
+.caja-principal {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    color: #d90429; /* Rojo Pasión */
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #8d0801;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/* --- Estilos de Secciones --- */
+section {
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #f77f00; /* Naranja Cálido */
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+/* --- Seccion de Imagen --- */
+.contenedor-imagen {
+    margin: 20px auto;
+    width: fit-content;
+    position: relative;
+}
+
+.foto-pareja {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.foto-pareja:hover {
+    transform: scale(1.05) rotate(1deg);
+}
+
+.leyenda {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* --- Seccion de Lista --- */
+.lista-amor {
+    list-style-type: '💖 '; /* Reemplaza las viñetas con un corazón */
+    text-align: left;
+    display: inline-block; /* Para centrar la lista */
+    padding-left: 0;
+    font-size: 1.1em;
+}
+
+.lista-amor li {
+    margin-bottom: 10px;
+}
+
+/* --- Seccion Interactiva (Cita Sorpresa) --- */
+.cita-oculta {
+    background-color: #ffe8d6; /* Fondo de color suave para la caja */
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Oculta el mensaje hasta el hover */
+}
+
+.cita-oculta p {
+    color: #d90429;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: opacity 0.3s;
+}
+
+.mensaje-sorpresa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d90429; /* El color del amor cuando se revela */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 1.2em;
+    opacity: 0; /* Empieza invisible */
+    transition: opacity 0.5s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cita-oculta:hover .mensaje-sorpresa {
+    opacity: 1; /* Se vuelve visible al pasar el mouse */
+}
+
+.cita-oculta:hover p {
+    opacity: 0; /* Oculta el texto de "Haz clic" */
+}
+
+/* --- Footer / Firma --- */
+.seccion-firma {
+    border-top: 2px dashed #fce3e6;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.firma {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #d90429;
+    margin: 5px 0;
+}
+
+.tu-nombre {
+    font-size: 1.5em;
+    color: #f77f00;
+}
